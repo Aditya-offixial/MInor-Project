@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    position: absolute;
+     top: 0;
+     left: 0;
+     padding: 20px 8%;
+     display: flex;
+     align-items: center;
+      justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.content{
+    text-align: center;
+
+}
+.content h1{
+    padding-top: 380px;
+    font-size: 160px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.content button{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bolder;
+    border: 2px solid black;
+    padding: 40px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: transparent;
+    cursor: grab;
+    
+    
+   
+    
+}
+.back-video{
+position:absolute;
+height: 1000px;
+right: 0;
+left: 0;
+z-index: -1;
+}
+@media (min-aspect-ration :16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+
+    }
+}
+@media (max-aspect-ration :16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+
+    }
+}
